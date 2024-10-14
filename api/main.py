@@ -8,7 +8,7 @@ async def index():
         "Project": "Topaz",
         "Module": "API",
         "Version": "v0.1",
-        "Description": "A service to connect the database"
+        "Description": "Database connection service"
         }
 
 @app.get('/children')
