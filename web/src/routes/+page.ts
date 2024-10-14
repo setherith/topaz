@@ -1,7 +1,6 @@
 /** @type {import('./$types').PageLoad} */
 export function load({ }) {
 	return {
-		names: ['ChildA', 'ChildB'],
 		questions: [
 			{
 				title: 'Mood',
