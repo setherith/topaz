@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from models import Record
+
+
 app = FastAPI()
 
 app.add_middleware(
@@ -23,3 +26,8 @@ async def index():
 @app.get('/children')
 async def list_children():
     return ['Child1', 'Child2', 'Child3']
+
+@app.post('/feedback')
+async def feedback(record: Record):
+    print (record)
+    return 

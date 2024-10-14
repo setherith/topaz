@@ -23,12 +23,8 @@
     </div>
 {:then child_names} 
     {#each child_names as child}
-        <Questionnaire name={child} questions={data.questions} />
+        <form method="post">
+            <Questionnaire name={child} questions={data.questions} />
+        </form>
     {/each}
 {/await}
-
-<div class="container mx-auto px-8 mt-0">
-    <section>
-        <!-- <a class="btn variant-filled-primary" on:click={submit}>Vote</a> -->
-    </section>
-</div>
