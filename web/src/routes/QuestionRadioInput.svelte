@@ -5,6 +5,6 @@
 </script>
 
 <label class="flex items-center space-x-2">
-    <input class="radio" type="radio" checked name={name} value={value} />
+    <input class="radio" type="radio" name={name} value={value} />
     <p>{description}</p>
 </label>
