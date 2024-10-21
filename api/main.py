@@ -1,7 +1,8 @@
+from typing import List
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from models import Record
+from models import Scores
 
 
 app = FastAPI()
@@ -28,5 +29,5 @@ async def list_children():
     return ['Child1', 'Child2', 'Child3']
 
 @app.post('/feedback')
-async def feedback(record: Record):
-    print (record)
+async def feedback(scores: Scores):
+    print (scores)

@@ -12,7 +12,6 @@ class Question(BaseModel):
     title: str
     responses: List[Response]
 
-class Record(BaseModel):
-    dt: dt
+class Scores(BaseModel):
     name: str
-    questions: List[Question]
+    scores: List[int]
